@@ -542,9 +542,10 @@ const App: React.FC = () => {
               <div className="max-w-3xl space-y-6 animate-fade-in">
                   <h1 className="text-4xl text-green-400 font-bold mb-4">HAPPY END —— 审判</h1>
                   <p>你成功将文件发送到警局。</p>
-                  <p>你成功将文件发送到警局，很快，公司的真面目浮出水面，“灵魂之桥”计划只是吴天赐的敛财工具，他和想要实现“永生”的富豪合作，研发“意识上传”技术，获取大量融资，全都打进了海外账户。他给林墨的试验人员也都是公司内部的健康人，不是绝症患者。</p>
+                  <p>很快，公司的真面目浮出水面，“灵魂之桥”计划只是吴天赐的敛财工具，他和想要实现“永生”的富豪合作，研发“意识上传”技术，获取大量融资，全都打进了自己的海外账户。其名下的基金会只是空壳摆设，并没有绝症患者做志愿者，因此吴天赐私下安排人将公司员工伪装成“患者”，供给科研团队做实验。</p>
                   <p>吴天赐及相关人员入狱后，“未来之星”科技有限公司宣布破产。</p>
                   <p>林墨带领科研团队重新创立了一家公司“数字生命”，继续投身于“绝症患者意识上传”的研究当中，同时，还推出新一代“智研AI”——小墨，其功能不再局限于帮助实验，是真正意义上的有“意识”的人工智能。</p>
+                  <p>也许在未来，冷冻技术将不再是无奈之选，而是成为像打针吃药一样寻常的医疗选择。</p>
                   <p className="text-blue-400 mt-4">感谢您的游玩。</p>
                   <div className="flex space-x-4">
                     <button onClick={restoreFromCheckpoint} className="mt-8 px-4 py-2 border border-green-500 text-green-500 hover:bg-green-500 hover:text-black transition">重启系统</button>
