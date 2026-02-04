@@ -546,7 +546,7 @@ const App: React.FC = () => {
                   <p>吴天赐及相关人员入狱后，“未来之星”科技有限公司宣布破产。</p>
                   <p>林墨带领科研团队重新创立了一家公司“数字生命”，继续投身于“绝症患者意识上传”的研究当中，同时，还推出新一代“智研AI”——小墨，其功能不再局限于帮助实验，是真正意义上的有“意识”的人工智能。</p>
                   <p>也许在未来，冷冻技术将不再是无奈之选，而是成为像打针吃药一样寻常的医疗选择。</p>
-                  <p className="text-blue-400 mt-4">感谢您的游玩。</p>
+                  <p className="text-blue-400 mt-4">感谢游玩，期待与你的下次见面。^—^</p>
                   <div className="flex space-x-4">
                     <button onClick={restoreFromCheckpoint} className="mt-8 px-4 py-2 border border-green-500 text-green-500 hover:bg-green-500 hover:text-black transition">重启系统</button>
                     <button onClick={handleClearSave} className="mt-8 px-4 py-2 border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black transition">清除存档</button>
@@ -564,6 +564,7 @@ const App: React.FC = () => {
                 <p>你发送的证据文件被公司拦截。</p>
                 <p>原来他们在部分文件中注入了病毒，一旦检测到病毒，不管文件伪装成什么样子都会被发现。</p>
                 <p>很可惜，你失败了。</p>
+                <p className="text-blue-400 mt-4">……数据已删除……</p>
                 <div className="flex space-x-4">
                   <button onClick={restoreFromCheckpoint} className="mt-8 px-4 py-2 border border-red-500 hover:bg-red-500 hover:text-black transition">重启系统</button>
                   <button onClick={handleClearSave} className="mt-8 px-4 py-2 border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black transition">清除存档</button>
