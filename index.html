@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
+<html lang="zh-CN">  
+  <head>  
+    <meta charset="UTF-8" />  
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>电脑逃生</title>
+    <title>电脑逃生</title>  
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       /* Custom Scrollbar for Terminal feel */
-      ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
+      ::-webkit-scrollbar {  
+        width: 8px;  
+        height: 8px;  
       }
-      ::-webkit-scrollbar-track {
-        background: #18181b; 
+      ::-webkit-scrollbar-track {  
+        background: #18181b;   
       }
-      ::-webkit-scrollbar-thumb {
-        background: #3f3f46; 
-        border-radius: 4px;
+      ::-webkit-scrollbar-thumb {  
+        background: #3f3f46;   
+        border-radius: 4px;  
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #52525b; 
+        background: #52525b;   
       }
-      .typing-caret {
-        display: inline-block;
-        width: 8px;
-        height: 1.2em;
-        background-color: #22c55e;
-        vertical-align: middle;
+      .typing-caret {  
+        display: inline-block;  
+        width: 8px;  
+        height: 1.2em;  
+        background-color: #22c55e;  
+        vertical-align: middle;  
         animation: blink 1s step-end infinite;
       }
-      @keyframes blink {
-        50% { opacity: 0; }
+      @keyframes blink {  
+        50% { opacity: 0; }  
       }
     </style>
-  <script type="importmap">
+  <script type="importmap">  
 {
   "imports": {
     "react": "https://esm.sh/react@^19.2.4",
@@ -46,6 +46,6 @@
 </head>
   <body class="bg-black text-zinc-300 font-mono overflow-hidden">
     <div id="root"></div>
-    <script type="module" src="index.tsx"></script>
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
