@@ -621,7 +621,7 @@ const App: React.FC = () => {
         </div>
 
         {/* Terminal Area */}
-        <div className="flex-1 overflow-y-auto p-4 custom-scrollbar" onClick={() => inputRef.current?.focus()}>
+        <div className="flex-1 overflow-y-auto p-4 custom-scrollbar select-text" onMouseUp={() => {}} onClick={() => inputRef.current?.focus()}>
           <TerminalOutput lines={history} />
           
           <div className="flex items-center text-zinc-300 select-text" ref={endRef}>
