@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
       // 关键：添加基础路径，必须与你的仓库名一致
-      base: '/escsape-computer/', 
+      base: '/escape-computer/', 
       server: {
         port: 3000,
         host: '0.0.0.0',
