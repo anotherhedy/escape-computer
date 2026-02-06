@@ -6,20 +6,24 @@ import FileTree from './components/FileTree';
 import { Monitor, Wifi, Battery, Clock, RotateCcw } from 'lucide-react';
 
 const App: React.FC = () => {
-  // Generate or retrieve player session ID for save isolation
-  const getPlayerSessionId = () => {
-    let sessionId = sessionStorage.getItem('soul_bridge_session_id');
-    if (!sessionId) {
-      // Generate a unique session ID for this browser tab/session
-      sessionId = 'player_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-      sessionStorage.setItem('soul_bridge_session_id', sessionId);
+  // Generate or retrieve persistent player ID for save isolation (use localStorage so saves persist across reloads)
+  const getPersistentPlayerId = () => {
+    const key = 'soul_bridge_player_id';
+    let id = localStorage.getItem(key);
+    if (!id) {
+      id = 'player_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+      try {
+        localStorage.setItem(key, id);
+      } catch (e) {
+        console.warn('Failed to persist player id:', e);
+      }
     }
-    return sessionId;
+    return id;
   };
 
-  const playerSessionId = getPlayerSessionId();
-  const SAVE_KEY = `soul_bridge_save_${playerSessionId}`;
-  const CHECKPOINT_KEY = `soul_bridge_checkpoint_${playerSessionId}`;
+  const playerId = getPersistentPlayerId();
+  const SAVE_KEY = `soul_bridge_save_${playerId}`;
+  const CHECKPOINT_KEY = `soul_bridge_checkpoint_${playerId}`;
 
   // Initialize state from localStorage or defaults
   const initializeGameState = () => {
